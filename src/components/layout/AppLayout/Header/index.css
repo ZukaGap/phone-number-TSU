@@ -1,0 +1,17 @@
+a {
+  color: var(--gray-dark) !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+#form-control {
+  border: 2px solid transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#form-control:focus {
+  border: 2px solid var(--warning);
+}
+.has-error #form-control:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}

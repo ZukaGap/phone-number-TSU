@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../../../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../../assets/fonts/Poppins-Medium.ttf");
+}
+
+.login-header {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins-SemiBold";
+  letter-spacing: 0.36px;
+  margin-top: 22px;
+  margin-bottom: 28px;
+}
+
+.span {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d3d3d3;
+}
+.span span {
+  height: 100%;
+  padding: 12px;
+  background-color: #fff;
+  z-index: 1;
+  font-family: "Poppins-Regular";
+  font-size: 11px;
+}
+.span .v_border {
+  height: 100%;
+  width: 1px;
+  margin: 0 4px;
+  background-color: #d3d3d3;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.login-input {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.social-login button {
+  width: 112px;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  background-color: #dadbdd29;
+  z-index: 1;
+}
+
+.signup-link,
+.reset-link {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  font-family: "Poppins-Regular";
+}
+
+.signup-link a,
+.reset-link a {
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Poppins-Medium";
+}
+
+.reset-link {
+  margin-top: 5px;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: #7fd4f0 !important;
+  outline: 0;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #7fd4f0 !important;
+  outline: 0;
+}
