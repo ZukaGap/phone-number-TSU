@@ -1,15 +1,17 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Layout } from "antd";
 import Header from "./Header/index";
 import "./index.css";
 
+const { Content } = Layout;
+
 export default function AppLayout({ children }) {
   return (
-    <>
-      <Container className="p-0" fluid>
-        <Header></Header>
-      </Container>
-      <Container fluid>{children}</Container>
-    </>
+    <Layout style={{ height: "100vh" }} id="app-layout" className="app-layout">
+      <Header />
+      <Content className="content-holder" fluid>
+        {children}
+      </Content>
+    </Layout>
   );
 }

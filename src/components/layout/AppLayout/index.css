@@ -1,3 +1,10 @@
+.app-layout .content-holder {
+  padding: 64px 100px;
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+  background-color: #dededf;
+}
+
 .fill-height.center {
   padding-top: 0;
   padding-bottom: 0;
